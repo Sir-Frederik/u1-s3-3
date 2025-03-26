@@ -12,14 +12,20 @@
 //   form.appendChild(button);
 //   body.appendChild(form);
 const form = document.querySelector("form");
-const list = document.getElementById("tasksList");
+const ul = document.getElementById("tasksList");
 
 form.onsubmit = function (event) {
   event.preventDefault();
   console.log("submit");
 
-  const inputNode = document.getElementById("newTask");
-  console.log(inputNode.value);
+  const input = document.getElementById("inNewTask");
+  console.log(input.value);
+
+  const li = document.createElement("li");
+  li.innerText = input.value;
+  console.log(li);
+  ul.appendChild(li);
+  form.reset();
 };
 
 console.log("ciao");
