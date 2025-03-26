@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+    <main>
+      <h1>To Do List</h1>
+      <form>
+        <input type="text" placeholder="Inserisci nuovo task" id="newTask" required />
+        <button type="submit">Aggiungi</button>
+      </form>
+      <div id="divTasks">
+        <ul id="tasksList"></ul>
+      </div>
+    </main>
     <script src="./script.js"></script>
-    <!-- <form>
-      <input type="text" placeholder="Nuovo task" />
-      <button type="button">Aggiungi</button>
-    </form>
-    <div id="divTasks">
-      <ul>
-        <span> Compito 1</span>
-        <button type="button" id="Completa">Completato</button>
-        <button type="button" id="Elimina">Elimina</button>
-      </ul>
-    </div> -->
   </body>
 </html>

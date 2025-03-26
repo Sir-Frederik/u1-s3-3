@@ -1,0 +1,20 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+main {
+  width: max-content;
+  margin-inline: auto;
+}
+input {
+    width: 300px;
+}
+input, button [type="submit"]{
+    min-height: 36px;
+}
+button [type="submit"] {
+min-width: 36px;
+}
