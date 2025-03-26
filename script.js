@@ -1,4 +1,4 @@
-const generateForm = function () {
+window.onload = function () {
   const body = document.querySelector("body");
 
   const form = document.createElement("form");
@@ -12,11 +12,15 @@ const generateForm = function () {
   form.appendChild(button);
   body.appendChild(form);
 
+const handleBtnClick = function (e){
+    console.log ("cliccato");
+}
+
   const div = document.createElement("div");
   const ul = document.createElement("ul");
 
   div.id = "divTasks";
   body.appendChild(div);
 };
-generateForm();
+
 console.log("ciao");
