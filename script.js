@@ -25,7 +25,10 @@ form.onsubmit = function (event) {
   li.innerText = input.value;
   console.log(li);
   ul.appendChild(li);
-  form.reset();
-};
 
-console.log("ciao");
+  li.onclick = function (event) {
+    event.currentTarget.classList.toggle("strike");
+  };
+
+  input.value = "";
+};
