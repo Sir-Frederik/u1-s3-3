@@ -29,9 +29,23 @@ li {
   background-color: lightcoral;
   margin-bottom: 2px;
   pading: 0.5rem;
+  cursor: pointer;
 }
 
 .strike {
   text-decoration: line-through;
   background-color: rgb(241, 191, 191);
+}
+
+li button {
+  float: right;
+  background-color: red;
+  color: white;
+  border-style: double;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: rgb(105, 6, 6);
 }

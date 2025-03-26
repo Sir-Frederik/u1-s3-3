@@ -23,7 +23,14 @@ form.onsubmit = function (event) {
 
   const li = document.createElement("li");
   li.innerText = input.value;
-  console.log(li);
+  const buttonDelete = document.createElement("button");
+  buttonDelete.innerText = "Elimina";
+  li.appendChild(buttonDelete);
+
+  buttonDelete.onclick = function (event) {
+    event.currentTarget.parentNode.remove();
+  };
+
   ul.appendChild(li);
 
   li.onclick = function (event) {
